@@ -19,13 +19,13 @@ export class HomePage {
     this.bmi = parseFloat(this.bmi.toFixed(2));
  
     if (this.bmi<18.5) {
-      this.bmiMessage = "Underweight";
+      this.bmiMessage = "(Underweight)";
     } else if (this.bmi>18.5 && this.bmi<25) {
-      this.bmiMessage = "Normal";
+      this.bmiMessage = "(Normal)";
     } else if (this.bmi>25&& this.bmi< 30) {
-      this.bmiMessage= "Overweight";
+      this.bmiMessage= "(Overweight)";
     } else {
-      this.bmiMessage= "Obese";       
+      this.bmiMessage= "(Obese)";       
    }
  } 
  
